@@ -7,7 +7,7 @@ export const generateSummaryFromGemini = async (pdfText:string)=>{
 
     try{
         const model = genAI.getGenerativeModel({
-            model: 'gemini-1.5-flash-8b-001',
+            model: 'gemini-2.5-flash',
             generationConfig:{
                 temperature:0.7,
                 maxOutputTokens:1500,
